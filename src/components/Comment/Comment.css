@@ -1,0 +1,36 @@
+.comment {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.934);
+  color: black;
+  margin: 20px 0;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px black;
+  transition: all 0.5s ease-in-out;
+}
+.commentName {
+  font-size: 20px;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+.commentBody {
+  font-size: 18px;
+  overflow-wrap: break-word;
+}
+.commentEmail {
+  font-size: 15px;
+  overflow-wrap: break-word;
+}
+@media (min-width: 576px) {
+  .comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 20px;
+  }
+  .comment:hover {
+    transform: scale(1.05, 1.05);
+    transition: all 0.5s ease-in-out;
+  }
+}

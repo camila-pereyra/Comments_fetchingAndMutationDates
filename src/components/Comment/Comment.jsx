@@ -2,10 +2,10 @@ import "./Comment.css";
 
 export const Comment = ({ name, email, body }) => {
   return (
-    <div>
-      <h3>{name}</h3>
-      <p>{body}</p>
-      <p>Comented by: {email}</p>
+    <div className="comment">
+      <p className="commentName">{name}</p>
+      <p className="commentBody">{body}</p>
+      <p className="commentEmail">Comented by: {email}</p>
     </div>
   );
 };

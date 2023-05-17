@@ -3,10 +3,13 @@ import "./ListComments.css";
 
 export const ListComments = ({ listComments }) => {
   return (
-    <div>
-      {listComments.map((comment) => (
-        <Comment key={comment.id} {...comment} />
-      ))}
-    </div>
+    <>
+      <p className="listComments">Comments</p>
+      <div className="containerComments">
+        {listComments.map((comment) => (
+          <Comment key={comment.id} {...comment} />
+        ))}
+      </div>
+    </>
   );
 };

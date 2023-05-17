@@ -1,0 +1,14 @@
+.listComments {
+  font-size: 25px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+@media (min-width: 576px) {
+  .containerComments {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+}

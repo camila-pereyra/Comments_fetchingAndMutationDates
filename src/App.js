@@ -48,34 +48,38 @@ function App() {
   return (
     <div className="App">
       <h1>Fetching y mutación de datos</h1>
-      <h2>JSON Placeholder</h2>
       <ListComments listComments={comments} />
-      <div>
-        <form onSubmit={onsubmit}>
-          <input
-            type="text"
-            placeholder="Tittle comment"
-            required
-            onChange={handleChangeTittle}
-            value={newNote.name}
-          />
-          <input
-            type="text"
-            placeholder="Description comment"
-            required
-            onChange={handleChangeDescription}
-            value={newNote.body}
-          />
-          <input
-            type="email"
-            placeholder="Your email"
-            required
-            onChange={handleChangeEmail}
-            value={newNote.email}
-          />
-          <button type="submit">Add comment</button>
-        </form>
-      </div>
+      <p className="newComment">New comment</p>
+      <form onSubmit={onsubmit} className="form">
+        <input
+          type="text"
+          placeholder="Tittle comment"
+          required
+          onChange={handleChangeTittle}
+          value={newNote.name}
+        />
+        <input
+          type="text"
+          placeholder="Description comment"
+          required
+          onChange={handleChangeDescription}
+          value={newNote.body}
+        />
+        <input
+          type="email"
+          placeholder="Your email"
+          required
+          onChange={handleChangeEmail}
+          value={newNote.email}
+        />
+        <button type="submit">Add comment</button>
+      </form>
+      <p className="apiUsed">
+        Esta aplicación consume recursos de{" "}
+        <a className="enlaceApi" href="https://jsonplaceholder.typicode.com/">
+          JSON Placeholder
+        </a>
+      </p>
     </div>
   );
 }
